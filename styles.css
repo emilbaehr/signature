@@ -21,7 +21,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,42 +46,36 @@ table {
 	border-spacing: 0;
 }
 
+tbody {
+    vertical-align: top;
+}
+
 
 /* Signature styling */
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12pt;
-}
-
-img {
-    width: 36px;
-    height: 36px;
+    font-size: 12px;
 }
 
 .bold {
     font-weight: bold;
 }
 
-.logoNameAndRole {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .textArea {
     margin-left: 16px;
 }
 
-.nameAndRole {
-
+.nameAndSlash {
+    margin-top: -2px;
+    display: inline-block;
 }
 
-.nameAndSlash {
-    display: flex;
-    flex-wrap: wrap;
+.nameAndSlash p {
+    float: left;
 }
 
 .slash {
-    margin-left: 8px;
+    margin-left: 4px;
     opacity: 0.1;
 }
 
@@ -95,6 +88,11 @@ img {
 }
 
 p {
+    margin-bottom: 4px;
+}
+
+a {
+    display: block;
     margin-bottom: 4px;
 }
 
