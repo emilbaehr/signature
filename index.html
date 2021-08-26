@@ -106,36 +106,9 @@
             display: block;
         }
 
-        body {
-            line-height: 1;
-        }
-
         ol,
         ul {
             list-style: none;
-        }
-
-        blockquote,
-        q {
-            quotes: none;
-        }
-
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-            content: '';
-            content: none;
-        }
-
-        table {
-            margin-top: 24px;
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        tbody {
-            vertical-align: top;
         }
 
 
@@ -154,17 +127,11 @@
         }
 
         .nameAndSlash {
-            margin-top: -3px;
-            display: inline-block;
+            margin-top: 0px;
         }
 
         .nameAndSlash p {
             float: left;
-        }
-
-        .slash {
-            margin-left: 4px;
-            opacity: 0.1;
         }
 
         .contactInfo {
@@ -194,58 +161,59 @@
     </style>
 </head>
 
-<body>
+<body style="line-height: 1; display: block;">
 
-    <table style="table-layout: fixed;">
-        <tr>
+    <table style="table-layout: fixed;
+    margin-top: 24px;
+    border-collapse: collapse;
+    border-spacing: 0;">
+        <tbody style="vertical-align: top;
+        line-height: 1 !important;">
 
-            <td height=28 width=28 style="background-size:100% 28px; background-repeat: no-repeat; background-image:url('https://raw.githubusercontent.com/emilbaehr/signature/shortcut2021/logo90.png?token=AALZ35VLFZWS5XXXFOAMAGTBF5FVI');">
-            </td>
+            <tr width=28>
 
-            <td>
-                <div class="textArea">
-                    <div class="nameAndRole">
-                        <div class="nameAndSlash bold">
-                            <p>
-                                Marianne Christensen
+                <td height=28 width=28
+                    style="background-size:28px 28px; background-repeat: no-repeat; background-image:url('https://raw.githubusercontent.com/emilbaehr/signature/shortcut2021/logo90.png?token=AALZ35VLFZWS5XXXFOAMAGTBF5FVI');">
+                </td>
+
+                <td>
+                    <div class="textArea">
+                        <div class="nameAndRole">
+                            <p class="nameAndSlash bold">
+                                First Last
                             </p>
-                            <!-- <p class="slash">
-                                /
-                            </p> -->
+                            <p class="title">
+                                Job Title
+                            </p>
                         </div>
-                        <div class="title">
-                            Head of User Insights and Research
+
+                        <div class="contactInfo">
+                            <a href="mailto:emil.baehr@shortcut.io" style="text-decoration: none;">
+                                emil.baehr@shortcut.io
+                            </a>
+                            <p>
+                                +45 00 00 00 00
+                            </p>
+                        </div>
+
+                        <div class="shortcut">
+                            <p class="bold">
+                                Shortcut
+                            </p>
+                            <p>
+                                Nyhavn 16
+                            </p>
+                            <p>
+                                1001 København K
+                            </p>
+                            <a href="https://shortcut.io">
+                                → shortcut.io
+                            </a>
                         </div>
                     </div>
-
-                    <div class="contactInfo">
-                        <a href="mailto:emil.baehr@shortcut.io" style="text-decoration: none;">
-                            emil.baehr@shortcut.io
-                        </a>
-                        <p>
-                            +45 00 00 00 00
-                        </p>
-                    </div>
-
-                    <div class="shortcut">
-                        <p class="bold">
-                            Shortcut
-                        </p>
-                        <p>
-                            Nyhavn 16
-                        </p>
-                        <p>
-                            1001 København K
-                        </p>
-                        <a href="https://shortcut.io">
-                            → shortcut.io
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </td>
-
-        </tr>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
 </body>
