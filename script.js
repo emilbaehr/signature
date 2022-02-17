@@ -5,12 +5,21 @@ const phoneInput = document.getElementById("phone-number");
 
 trackInput(nameInput, document.getElementById("name-value"))
 trackInput(titleInput, document.getElementById("title"))
-trackInput(emailInput, document.getElementById("email-value"))
+trackEmailInput(emailInput, document.getElementById("email-value"))
 trackInput(phoneInput, document.getElementById("phone-value"))
 
 function trackInput(inputField, outputField) {
     inputField.addEventListener("input", () => {
         outputField.innerHTML = inputField.value
+    });
+}
+
+function trackEmailInput(inputField, outputField) {
+    inputField.addEventListener("input", () => {
+        outputField.innerHTML = inputField.value
+        outputField.href = inputField.value
+        let emailLink = document.getElementById("email-value-href");
+        emailLink.href = "mailto:" + inputField.value
     });
 }
 
