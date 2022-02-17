@@ -1,204 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 
 <head>
+    <meta charset="UTF-8" />
+    <title>Shortcut Email Signature</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <style>
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
+        :root {
+            --font-family-p: sans-serif;
+            --font-family-h: sans-serif;
+            --light-grey: #e7e7e7e7;
+        }
+
+        .container {
+            margin: 80px auto;
+            max-width: 1200px;
+        }
+
+        .sections-container {
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .form-section {
+            margin-right: 12vw;
+            min-width: 500px;
+        }
+
+        form {
+            max-width: 300px;
+        }
+
+        .form-input {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         h1,
         h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        embed,
-        figure,
-        figcaption,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        output,
-        ruby,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
+        h3 {
+            font-family: var(--font-family-h);
+            font-weight: 600;
+
+            margin-bottom: 10px;
         }
 
-        /* Signature styling */
-        html {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 13px;
+        h1 {
+            text-transform: uppercase;
         }
 
-        .bold {
-            font-weight: bold;
+        .form-section h2,
+        .signature-section h2 {
+            margin-bottom: 25px;
         }
 
-        .textArea {
-            margin-left: 24px;
+        .info {
+            font-family: var(--font-family-p);
+            max-width: 65ch;
         }
 
-        .nameAndSlash {
-            margin-top: 0px;
+        label {
+            font-family: var(--font-family-p);
         }
 
-        .nameAndSlash p {
-            float: left;
+        .form-input {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
         }
 
-        .contactInfo {
-            margin-top: 16px;
+        label {
+            margin-right: 25px;
+            vertical-align: middle;
         }
 
-        .shortcut {
-            margin-top: 16px;
+        input {
+            padding: 5px;
         }
 
-        p {
-            margin-bottom: 3px;
+        .border,
+        input {
+            border: 2px solid var(--light-grey);
+            border-radius: 10px;
         }
 
-        a {
-            display: block;
-            margin-bottom: 3px;
+        .form-border {
+            padding: 10px 40px 30px 40px;
         }
 
-        a:any-link {
-            color: black;
+        .btn-spacing {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        button {
+            padding: 15px;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: #62bb6b;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
         }
     </style>
 </head>
 
-<body style="line-height: 1; display: block;">
+<body>
+    <div class="container">
+        <h1>Shortcut email signatur</h1>
+        <p class="info">
+            Her kan du indtaste dine oplysninger og få genereret en personlig
+            emailsignatur. Når du har indtastet alle dine informationer, kan du
+            kopiere signaturen. Denne kan pastes ind i dit mailprogram, som fx
+            Gmail.
+        </p>
+        <div class="sections-container">
+            <div class="form-section">
+                <h2>Intast dine oplysninger</h2>
 
-    <table style="table-layout: fixed;
-    margin-top: 24px;
-    border-collapse: collapse;
-    border-spacing: 0;">
-        <tbody style="vertical-align: top;
-        line-height: 1 !important;">
-
-            <tr>
-                <td width="28" height="28">
-                    
-                    <table 
-                    width="28"
-                    height="28"
-                    style="table-layout: fixed;
-                    border-collapse: collapse;
-                    border-spacing: 0;">
-                        <img width="28" src="https://raw.githubusercontent.com/emilbaehr/signature/shortcut2021/logo.png?token=AALZ35VLFZWS5XXXFOAMAGTBF5FVI"/>
-                    </table>
-                
-                </td>
-
-                <td>
-                    <div class="textArea">
-                        <div class="nameAndRole">
-                            <p class="nameAndSlash bold">
-                                First Last
-                            </p>
-                            <p class="title">
-                                Job Title
-                            </p>
-                        </div>
-
-                        <div class="contactInfo">
-                            <a href="mailto:emil.baehr@shortcut.io" style="text-decoration: none;">
-                                emil.baehr@shortcut.io
-                            </a>
-                            <p>
-                                +45 00 00 00 00
-                            </p>
-                        </div>
-
-                        <div class="shortcut">
-                            <p class="bold">
-                                Shortcut
-                            </p>
-                            <p>
-                                Nyhavn 16
-                            </p>
-                            <p>
-                                1001 København K
-                            </p>
-                            <a href="https://shortcut.io">
-                                → shortcut.io
-                            </a>
-                        </div>
+                <form>
+                    <div class="form-input">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="name" placeholder="Dit navn" />
                     </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 
+                    <div class="form-input">
+                        <label for="job-title"> Titel </label>
+                        <input type="text" id="job-title" name="job-title" placeholder="Din titel" />
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email"> Email </label>
+                        <input type="email" id="email" name="email" placeholder="mail@shortcut.io" />
+                    </div>
+
+                    <div class="form-input">
+                        <label for="phone-number"> Telefonnummer </label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="+45 00 00 00 00" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="signature-section">
+                <h2>Din nye email signatur</h2>
+
+                <div id="html-to-copy" class="form-border border">
+                    <table style="
+                table-layout: fixed;
+                margin-top: 24px;
+                border-collapse: collapse;
+                border-spacing: 0;
+              ">
+                        <tbody style="
+                  vertical-align: top;
+                  line-height: 1 !important;
+                  color: black;
+                ">
+                            <tr>
+                                <td width="28" height="28">
+                                    <table width="28" height="28" style="
+                        table-layout: fixed;
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                      ">
+                                        <img width="28"
+                                            src="https://raw.githubusercontent.com/emilbaehr/signature/shortcut2021/logo.png?token=AALZ35VLFZWS5XXXFOAMAGTBF5FVI" />
+                                    </table>
+                                </td>
+
+                                <td>
+                                    <div class="textArea" style="margin-left: 24px; color: black">
+                                        <div class="nameAndRole">
+                                            <p id="name-value" class="nameAndSlash bold" style="
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                            font-weight: bold;
+                            margin-top: 0px;
+                          ">
+                                                First Last
+                                            </p>
+
+                                            <p id="title" style="
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                          ">
+                                                Job Title
+                                            </p>
+                                        </div>
+                                        <div class="contactInfo" style="padding-top: 16px; color: black">
+                                            <a href="mailto:emil.baehr@shortcut.io" style="
+                            color: black;
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                            text-decoration: none;
+                            display: block;
+                          ">
+                                                <span id="email-value">emil.baehr@shortcut.io</span>
+                                            </a>
+                                            <p style="
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                          ">
+                                                <span id="phone-value"></span>
+                                            </p>
+                                        </div>
+
+                                        <div class="shortcut" style="padding-top: 16px; color: black">
+                                            <p class="bold" style="
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                            font-weight: bold;
+                          ">
+                                                Shortcut
+                                            </p>
+                                            <p style="
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                          ">
+                                                Nyhavn 16
+                                            </p>
+                                            <p style="
+                            margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font-size: 100%;
+                            font: inherit;
+                            font-family: -apple-system, BlinkMacSystemFont,
+                              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                              'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 13px;
+                            margin-bottom: 3px;
+                          ">
+                                                1001 København K
+                                            </p>
+                                            <div style="padding-top: 16px; color: black">
+                                                <a style="
+                              margin: 0;
+                              padding: 0;
+                              border: 0;
+                              font-size: 100%;
+                              font: inherit;
+                              font-family: -apple-system, BlinkMacSystemFont,
+                                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                                'Open Sans', 'Helvetica Neue', sans-serif;
+                              font-size: 13px;
+                              margin-bottom: 3px;
+                              display: block;
+                              color: black;
+                              font-weight: bold;
+                            " href="https://shortcut.io">
+                                                    → shortcut.io
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-spacing">
+                    <button class="copy-signature-btn">Kopier signatur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
