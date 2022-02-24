@@ -58,6 +58,10 @@
         .signature-section h2 {
             margin-bottom: 25px;
         }
+        
+        a {
+            color: black;
+        }
 
         .info {
             font-family: var(--font-family-p);
@@ -118,26 +122,23 @@
 
 <body>
     <div class="container">
-        <h1>Shortcut email signatur</h1>
+        <h1>Shortcut email-signature</h1>
         <p class="info">
-            Her kan du indtaste dine oplysninger og få genereret en personlig
-            emailsignatur. Når du har indtastet alle dine informationer, kan du
-            kopiere signaturen. Denne kan pastes ind i dit mailprogram, som fx
-            Gmail.
+            This form lets you enter your informations and produces a personalized email signature. When all your information is entered, please use the "Copy Signature" button. Paste your new signature into your email client e.g. <a href="https://support.google.com/mail/answer/8395?hl=en&co=GENIE.Platform%3DDesktop" target="_blank">Gmail</a>. 
         </p>
         <div class="sections-container">
             <div class="form-section">
-                <h2>Intast dine oplysninger</h2>
+                <h2>Enter your information</h2>
 
                 <form>
                     <div class="form-input">
-                        <label for="name">Navn</label>
-                        <input type="text" id="name" name="name" placeholder="Dit navn" />
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" />
                     </div>
 
                     <div class="form-input">
-                        <label for="job-title"> Titel </label>
-                        <input type="text" id="job-title" name="job-title" placeholder="Din titel" />
+                        <label for="job-title"> Title </label>
+                        <input type="text" id="job-title" name="job-title" placeholder="Your title" />
                     </div>
 
                     <div class="form-input">
@@ -146,14 +147,14 @@
                     </div>
 
                     <div class="form-input">
-                        <label for="phone-number"> Telefonnummer </label>
+                        <label for="phone-number"> Phone number</label>
                         <input type="tel" id="phone-number" name="phone-number" placeholder="+45 00 00 00 00" />
                     </div>
                 </form>
             </div>
 
             <div class="signature-section">
-                <h2>Din nye email signatur</h2>
+                <h2>Your new email signature</h2>
 
                 <div id="html-to-copy" class="form-border border">
                     <table style="
@@ -315,7 +316,7 @@
                 </div>
 
                 <div class="btn-spacing">
-                    <button class="btn">Kopier signatur</button>
+                    <button class="btn">Copy signature</button>
                 </div>
             </div>
         </div>
